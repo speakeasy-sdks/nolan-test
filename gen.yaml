@@ -1,0 +1,10 @@
+python:
+    version: 0.0.0
+go:
+    packagename: github.com/speakeasy-sdks/nolan-test
+    version: 0.0.0
+typescript:
+    version: 0.0.0
+java:
+    version: 0.0.0
+telemetryenabled: true
