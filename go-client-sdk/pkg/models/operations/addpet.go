@@ -2,7 +2,7 @@ package operations
 
 import (
 	"github.com/speakeasy-sdks/nolan-test/pkg/models/shared"
-	"github.com/speakeasy-sdks/nolan-test/pkg/models/utils"
+	"github.com/speakeasy-sdks/nolan-test/pkg/utils"
 )
 
 type AddPetRequest struct {

@@ -4,7 +4,7 @@
 ## SDK Installation
 
 ```bash
-pip install 
+pip install openapi
 ```
 <!-- End SDK Installation -->
 

@@ -1,17 +1,17 @@
 management:
     openapi-checksum: 195f90bbe7ae4498241444be2c712e7e
     openapi-version: 1.0.0
-    speakeasy-version: 1.3.3
+    speakeasy-version: 1.4.5
 go:
-    version: 0.1.0
+    version: 0.2.0
     packagename: github.com/speakeasy-sdks/nolan-test
 typescript:
-    version: 0.1.0
+    version: 0.2.0
     packagename: ""
 python:
-    version: 0.1.0
+    version: 0.2.0
     packagename: ""
 java:
-    version: 0.1.0
+    version: 0.2.0
     packagename: ""
 telemetryenabled: true

@@ -2,8 +2,8 @@
 ```java
 package hello.world;
 
-import .SDK;
-import .models.shared.Security;
+import org.openapis.openapi.SDK;
+import org.openapis.openapi.models.shared.Security;
 
 public class Application {
     public static void main(String[] args) {

@@ -6,21 +6,21 @@
 ### NPM
 
 ```bash
-npm add 
+npm add openapi
 ```
 
 ### Yarn
 
 ```bash
-yarn add 
+yarn add openapi
 ```
 <!-- End SDK Installation -->
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
 ```typescript
-import { SDK, withSecurity} from "";
-import { AddPetRequest, AddPetResponse } from "/src/sdk/models/operations";
+import { SDK, withSecurity} from "openapi";
+import { AddPetRequest, AddPetResponse } from "openapi/src/sdk/models/operations";
 import { AxiosError } from "axios";
 
 

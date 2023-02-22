@@ -1,5 +1,10 @@
 src/sdk/sdk.py
 setup.py
+src/sdk/__init__.py
+src/sdk/models/__init__.py
+src/sdk/utils/__init__.py
+src/sdk/utils/retries.py
+src/sdk/utils/utils.py
 src/sdk/models/operations/addpet.py
 src/sdk/models/operations/deletepet.py
 src/sdk/models/operations/findpets.py
