@@ -1,6 +1,7 @@
+from __future__ import annotations
 import dataclasses
 from ..shared import error as shared_error
-from ..utils import retryconfig as utils_retryconfig
+from sdk import utils
 from typing import Optional
 
 

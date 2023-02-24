@@ -17,8 +17,8 @@ class SDK:
     
     _server_url: str = SERVERS[0]
     _language: str = "python"
-    _sdk_version: str = "0.2.1"
-    _gen_version: str = "1.4.8"
+    _sdk_version: str = "0.3.0"
+    _gen_version: str = "1.5.0"
 
     def __init__(self) -> None:
         self._client = requests.Session()
@@ -49,10 +49,10 @@ class SDK:
         url = base_url.removesuffix("/") + "/pets"
         
         headers = {}
-        req_content_type, data, json, files = utils.serialize_request_body(request)
+        req_content_type, data, form = utils.serialize_request_body(request)
         if req_content_type != "multipart/form-data" and req_content_type != "multipart/mixed":
             headers["content-type"] = req_content_type
-        if data is None and json is None:
+        if data is None and form is None:
            raise Exception('request body is required')
         headers["user-agent"] = f"speakeasy-sdk/{self._language} {self._sdk_version} {self._gen_version}"
         
@@ -65,7 +65,7 @@ class SDK:
             
 
         def do_request():
-            return client.request("POST", url, data=data, json=json, files=files, headers=headers)
+            return client.request("POST", url, data=data, files=form, headers=headers)
         
         r = utils.retry(do_request, utils.Retries(retry_config, [
             "5XX"

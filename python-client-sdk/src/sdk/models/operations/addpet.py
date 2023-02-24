@@ -1,8 +1,9 @@
+from __future__ import annotations
 import dataclasses
 from ..shared import error as shared_error
 from ..shared import newpet as shared_newpet
 from ..shared import pet as shared_pet
-from ..utils import retryconfig as utils_retryconfig
+from sdk import utils
 from typing import Optional
 
 

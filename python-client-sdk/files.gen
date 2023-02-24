@@ -14,11 +14,6 @@ src/sdk/models/shared/pet.py
 src/sdk/models/shared/error.py
 src/sdk/models/shared/newpet.py
 src/sdk/models/shared/__init__.py
-src/sdk/models/utils/addpet.py
-src/sdk/models/utils/deletepet.py
-src/sdk/models/utils/findpets.py
-src/sdk/models/utils/findpet.py
-src/sdk/models/utils/__init__.py
 src/sdk/models/webhooks/newpet.py
 src/sdk/models/webhooks/__init__.py
 USAGE.md
