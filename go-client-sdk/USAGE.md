@@ -3,6 +3,7 @@
 package main
 
 import (
+    "context"
     "log"
     "github.com/speakeasy-sdks/nolan-test"
     "github.com/speakeasy-sdks/nolan-test/pkg/models/shared"
@@ -18,7 +19,8 @@ func main() {
             Tag: "deserunt",
         },
     }
-    
+
+    ctx := context.Background()
     res, err := s.AddPet(ctx, req)
     if err != nil {
         log.Fatal(err)
@@ -27,5 +29,6 @@ func main() {
     if res.Pet != nil {
         // handle response
     }
+}
 ```
 <!-- End SDK Example Usage -->
