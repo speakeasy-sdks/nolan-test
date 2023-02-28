@@ -1,6 +1,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import * as shared from "../shared";
 import * as utils from "../utils";
+import { Type } from "class-transformer";
 
 
 export class AddPetRequest extends SpeakeasyBase {
@@ -8,7 +9,7 @@ export class AddPetRequest extends SpeakeasyBase {
   request: shared.NewPet;
 
   @SpeakeasyMetadata()
-  retries?: RetryConfig;
+  retries?: utils.RetryConfig;
 }
 
 export class AddPetResponse extends SpeakeasyBase {

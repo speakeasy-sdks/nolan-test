@@ -39,3 +39,11 @@ Based on:
 - Speakeasy CLI 1.5.3 https://github.com/speakeasy-api/speakeasy
 ### Releases
 - [Go v0.3.1] https://github.com/speakeasy-sdks/nolan-test/releases/tag/v0.3.1 - go-client-sdk
+
+## Version 0.3.2
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://prod.speakeasyapi.dev/v1/apis/Petstore/version/1.0.0/schema/download
+- Speakeasy CLI 1.5.4 https://github.com/speakeasy-api/speakeasy
+### Releases
+- [Go v0.3.2] https://github.com/speakeasy-sdks/nolan-test/releases/tag/v0.3.2 - go-client-sdk

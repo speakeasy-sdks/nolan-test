@@ -1,6 +1,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import * as shared from "../shared";
 import * as utils from "../utils";
+import { Type } from "class-transformer";
 
 
 export class DeletePetPathParams extends SpeakeasyBase {
@@ -13,7 +14,7 @@ export class DeletePetRequest extends SpeakeasyBase {
   pathParams: DeletePetPathParams;
 
   @SpeakeasyMetadata()
-  retries?: RetryConfig;
+  retries?: utils.RetryConfig;
 }
 
 export class DeletePetResponse extends SpeakeasyBase {

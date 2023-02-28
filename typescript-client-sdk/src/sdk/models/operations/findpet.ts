@@ -1,6 +1,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import * as shared from "../shared";
 import * as utils from "../utils";
+import { Type } from "class-transformer";
 
 
 export class FindpetPathParams extends SpeakeasyBase {
@@ -13,7 +14,7 @@ export class FindpetRequest extends SpeakeasyBase {
   pathParams: FindpetPathParams;
 
   @SpeakeasyMetadata()
-  retries?: RetryConfig;
+  retries?: utils.RetryConfig;
 }
 
 export class FindpetResponse extends SpeakeasyBase {

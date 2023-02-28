@@ -1,10 +1,13 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
+import { Expose } from "class-transformer";
 
 
 export class ErrorT extends SpeakeasyBase {
-  @SpeakeasyMetadata({ data: "json, name=code" })
+  @SpeakeasyMetadata()
+  @Expose({ name: "code" })
   code: number;
 
-  @SpeakeasyMetadata({ data: "json, name=message" })
+  @SpeakeasyMetadata()
+  @Expose({ name: "message" })
   message: string;
 }

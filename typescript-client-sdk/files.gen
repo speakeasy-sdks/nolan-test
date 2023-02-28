@@ -1,4 +1,5 @@
 src/sdk/sdk.ts
+jest.config.js
 package-lock.json
 package.json
 src/index.ts

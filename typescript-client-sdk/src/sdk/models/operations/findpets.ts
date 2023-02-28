@@ -1,6 +1,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import * as shared from "../shared";
 import * as utils from "../utils";
+import { Type } from "class-transformer";
 
 
 export class FindPetsQueryParams extends SpeakeasyBase {
@@ -16,7 +17,7 @@ export class FindPetsRequest extends SpeakeasyBase {
   queryParams: FindPetsQueryParams;
 
   @SpeakeasyMetadata()
-  retries?: RetryConfig;
+  retries?: utils.RetryConfig;
 }
 
 export class FindPetsResponse extends SpeakeasyBase {
